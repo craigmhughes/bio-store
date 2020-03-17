@@ -27,7 +27,7 @@
                         <img src="../assets/images/icons/gb.svg" class="navigation__contact-link-image"/>
                         0151 883 1122
                     </a>
-                    <a href="mailto:01518831122" class="navigation__contact-link">info@biostoreexample.co.uk</a>
+                    <a href="mailto:info@biostoreexample.co.uk" class="navigation__contact-link">info@biostoreexample.co.uk</a>
                 </section>
                 <button class="navigation__menu-btn"><img src="../assets/images/icons/menu.svg" class="navigation__menu-btn-image"/></button>
             </section>    
