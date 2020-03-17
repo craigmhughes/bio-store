@@ -29,7 +29,7 @@
                     </a>
                     <a href="mailto:info@biostoreexample.co.uk" class="navigation__contact-link">info@biostoreexample.co.uk</a>
                 </section>
-                <button class="navigation__menu-btn"><img src="../assets/images/icons/menu.svg" class="navigation__menu-btn-image"/></button>
+                <!-- <button class="navigation__menu-btn"><img src="../assets/images/icons/menu.svg" class="navigation__menu-btn-image"/></button> -->
             </section>    
         </section>
     </header>
@@ -85,7 +85,7 @@ export default {
 
         &__image {
             width: calc(100% - 8em);
-            min-width: 180px;
+            min-width: 100px;
             max-width: 200px;
             height: auto;
             display: flex;
@@ -200,11 +200,12 @@ export default {
 
     @media screen and (max-width: 1250px) {
         .navigation {
+            border-top: 1px solid #e3e3e3;
+
             &__container {
                 display: grid;
                 grid-template-columns: 2fr 8fr;
                 padding-bottom: 2em;
-                border-bottom: 1px solid #e3e3e3;
             }
 
             &__contact-details {
@@ -222,21 +223,50 @@ export default {
     }
 
     @media screen and (max-width: 780px) {
+        .navigation-top {
+            &__container {
+                justify-content: space-between;
+                width: 90%;
+                margin: 0 auto;
+                font-size: 0.8em;
+            }
+        }
+
         .navigation {
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            font-size: 0.9em;
+
             &__container {
                 width: 90%;
-                grid-template-columns: 6fr 4fr;
-                padding-bottom: 2em;
+                grid-template-columns: 3fr 7fr;
                 border-bottom: 1px solid #e3e3e3;
+                margin: 0 auto;
+                padding: 1em 0;
+                
+                &--last {
+                    overflow-x: scroll;
+                }
             }
 
             &__contact-details {
                 display: none;
             }
 
+            &__image {
+                align-self: center;
+            }
+
             &__menu-btn {
                 display: flex;                
                 padding: 1em;
+            }
+
+            &__menu-container {
+                display: none;
+                width: 0;
             }
 
             &__image {
@@ -246,7 +276,33 @@ export default {
             }
 
             &__nav-container {
-                display: none;
+                margin-left: 2em;
+                margin-right: 0em;
+                padding-right: 0;
+            }
+
+            &__nav {
+
+                &-link {
+                    border-radius: 1.25em;
+                    border: 2px solid #222;
+                    color: #222;
+                    font-size: 0.8em;
+                    margin: 0 0.5em;
+                    width: max-content;
+                    white-space: nowrap;
+                    padding: 1em 2em;
+
+                    &--active {
+                        background: $brand_color;
+                        border: 2px solid $brand_color;
+                        color: #fff;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
             }
         }
     }
