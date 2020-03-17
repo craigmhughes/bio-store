@@ -1,28 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navigation/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navigation
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import './assets/variables';
+  @import './assets/global-elements.scss';
+
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #222;
+  }
+
+  body {
+      margin: 0;
+      font-size: 18px;
+  }
+
+  // Quick apply styles to all headings.
+  $headings: h1 h2 h3 h4 h5 h6;
+
+  @each $heading in $headings{
+      #{$heading} {
+          letter-spacing: -0.05em;
+      }
+  }
+
+  // Keep body content smaller than nav
+  main .container {
+      max-width: 1080px;
+  }
+  
 </style>
