@@ -20,7 +20,7 @@
                     <router-link to="/about" class="navigation__nav-link">About us</router-link>
                     <router-link to="/meet-the-team" class="navigation__nav-link">Meet the Team</router-link>
                     <router-link to="/products" class="navigation__nav-link">Products</router-link>
-                    <router-link to="/" class="navigation__nav-link">Contact us</router-link>
+                    <router-link to="/contact" class="navigation__nav-link">Contact us</router-link>
                 </nav>
             </section>
             <!-- Side Contact-Details Section -->
