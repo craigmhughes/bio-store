@@ -63,6 +63,7 @@ export default {
     }
 
     .navigation {
+        background: #fff;
         font-size: 0.9em;
         width: 100%;
 
