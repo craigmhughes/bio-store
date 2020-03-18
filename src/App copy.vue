@@ -1,20 +1,22 @@
 <template>
   <div id="app">
     <Navigation />
-    <router-view/>
+    <Home />
     <Footer />
   </div>
 </template>
 
 <script>
-import Navigation from './views/components/Navigation.vue';
-import Footer from './views/components/Footer.vue';
+import Navigation from './components/Navigation.vue';
+import Footer from './components/Footer.vue';
+import Home from './components/Home.vue';
 
 export default {
   name: 'App',
   components: {
     Navigation,
-    Footer
+    Footer,
+    Home
   }
 }
 </script>
@@ -50,4 +52,5 @@ export default {
   main .container {
       max-width: 1080px;
   }
+
 </style>

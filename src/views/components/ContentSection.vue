@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../assets/global-elements.scss';
+    @import '../../assets/global-elements.scss';
 
     .content-slide--emph, .content-slide--img {
         @extend .content-slide;

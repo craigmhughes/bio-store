@@ -3,15 +3,15 @@
         <section class="navigation-top">
             <section class="navigation-top__container">
                 <a href="tel:01518831122" class="navigation-top__link">
-                    <img src="../assets/images/icons/phone.svg" class="navigation-top__link-image"/> 
-                    <img src="../assets/images/icons/gb.svg" class="navigation-top__link-image"/>
+                    <img src="../../assets/images/icons/phone.svg" class="navigation-top__link-image"/> 
+                    <img src="../../assets/images/icons/gb.svg" class="navigation-top__link-image"/>
                     0151 883 1122
                 </a>
                 <a href="mailto:01518831122" class="navigation-top__link">info@biostoreexample.co.uk</a>
             </section>
         </section>
         <section class="navigation__container--last">
-            <img src="../assets/images/logo-colour.svg" class="navigation__image"/>
+            <img src="../../assets/images/logo-colour.svg" class="navigation__image"/>
             <section class="navigation__nav-container">
                 <nav class="navigation__nav">
                     <a href="/" class="navigation__nav-link--active">Home</a>
@@ -23,13 +23,13 @@
             <section class="navigation__menu-container">
                 <section class="navigation__contact-details">
                     <a href="tel:01518831122" class="navigation__contact-link">
-                        <img src="../assets/images/icons/phone.svg" class="navigation__contact-link-image"/> 
-                        <img src="../assets/images/icons/gb.svg" class="navigation__contact-link-image"/>
+                        <img src="../../assets/images/icons/phone.svg" class="navigation__contact-link-image"/> 
+                        <img src="../../assets/images/icons/gb.svg" class="navigation__contact-link-image"/>
                         0151 883 1122
                     </a>
                     <a href="mailto:info@biostoreexample.co.uk" class="navigation__contact-link">info@biostoreexample.co.uk</a>
                 </section>
-                <!-- <button class="navigation__menu-btn"><img src="../assets/images/icons/menu.svg" class="navigation__menu-btn-image"/></button> -->
+                <!-- <button class="navigation__menu-btn"><img src="../../assets/images/icons/menu.svg" class="navigation__menu-btn-image"/></button> -->
             </section>    
         </section>
     </header>
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/global-elements.scss';
+    @import '../../assets/global-elements.scss';
 
     .navigation-top {
         background-color: #f4f4f4;

@@ -10,11 +10,11 @@
                 </ul>
             </section>
             <section class="footer__bottom">
-                <img :src="require('../assets/images/logo-light.svg')" class="footer__logo"/>
+                <img :src="require('../../assets/images/logo-light.svg')" class="footer__logo"/>
                 <section class="footer__contact-details">
                     <a href="tel:01518831122" class="footer__contact-link">
-                        <img src="../assets/images/icons/phone-light.svg" class="footer__contact-link-image"/> 
-                        <img src="../assets/images/icons/gb.svg" class="footer__contact-link-image"/>
+                        <img src="../../assets/images/icons/phone-light.svg" class="footer__contact-link-image"/> 
+                        <img src="../../assets/images/icons/gb.svg" class="footer__contact-link-image"/>
                         0151 883 1122
                     </a>
                     <a href="mailto:info@biostoreexample.co.uk" class="footer__contact-link">info@biostoreexample.co.uk</a>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../assets/global-elements';
+    @import '../../assets/global-elements.scss';
 
     .footer {
         background: #363636;

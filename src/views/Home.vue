@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import ContentSection from '../components/ContentSection.vue'
+import ContentSection from './components/ContentSection.vue'
 
 export default {
   name: 'Home',
