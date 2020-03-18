@@ -36,7 +36,7 @@
 
     <ContentSection :emph="true" slot="content">
         <h2 slot="title" class="content-slide__title">Who are we?</h2>
-        <button slot="contentButton" class="content-slide__button--emph">Meet the team!</button>
+        <router-link to="/meet-the-team" slot="contentButton" class="content-slide__button--emph">Meet the team!</router-link>
     </ContentSection>
   </Page>
 </template>

@@ -1,5 +1,6 @@
 <template>
     <header class="navigation">
+        <!-- Contact-Details bar -->
         <section class="navigation-top">
             <section class="navigation-top__container">
                 <a href="tel:01518831122" class="navigation-top__link">
@@ -10,16 +11,19 @@
                 <a href="mailto:01518831122" class="navigation-top__link">info@biostoreexample.co.uk</a>
             </section>
         </section>
+        <!-- Main -->
         <section class="navigation__container--last">
             <img src="../../assets/images/logo-colour.svg" class="navigation__image"/>
             <section class="navigation__nav-container">
                 <nav class="navigation__nav">
                     <router-link to="/" class="navigation__nav-link--active">Home</router-link>
                     <router-link to="/about" class="navigation__nav-link">About us</router-link>
+                    <router-link to="/meet-the-team" class="navigation__nav-link">Meet the Team</router-link>
                     <router-link to="/" class="navigation__nav-link">Products</router-link>
                     <router-link to="/" class="navigation__nav-link">Contact us</router-link>
                 </nav>
             </section>
+            <!-- Side Contact-Details Section -->
             <section class="navigation__menu-container">
                 <section class="navigation__contact-details">
                     <a href="tel:01518831122" class="navigation__contact-link">
@@ -29,9 +33,9 @@
                     </a>
                     <a href="mailto:info@biostoreexample.co.uk" class="navigation__contact-link">info@biostoreexample.co.uk</a>
                 </section>
-                <!-- <button class="navigation__menu-btn"><img src="../../assets/images/icons/menu.svg" class="navigation__menu-btn-image"/></button> -->
             </section>    
         </section>
+        
     </header>
 </template>
 
