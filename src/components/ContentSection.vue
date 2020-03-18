@@ -28,8 +28,8 @@ export default {
     }    
 
     .content-slide {
-        font-size: 1.5rem;
-        padding: 2em 0;
+        font-size: 1rem;
+        padding: 2em 1em;
         margin: 0;
         text-align: center;
 
@@ -93,7 +93,7 @@ export default {
                 & .content-slide__body-content {
                     width: 80%;
                     text-align: left;
-                    min-width: 300px;
+                    min-width: 250px;
                     max-width: 600px;
                     margin-bottom: 1rem;
                 }
@@ -124,7 +124,7 @@ export default {
         &__button {
             @extend .btn-secondary;
 
-            font-size: 1.1rem;
+            font-size: 0.8em;
             margin: 0 auto;
 
             &--emph {

@@ -175,8 +175,12 @@ export default {
 
             &__content {
 
+                &-title {
+                    font-size: 3rem;
+                }
+
                 &-art {
-                    max-width: 250px;
+                    max-width: 150px;
                 }
             }
         }

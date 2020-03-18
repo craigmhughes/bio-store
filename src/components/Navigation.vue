@@ -66,6 +66,7 @@ export default {
         background: #fff;
         font-size: 0.9em;
         width: 100%;
+        z-index: 100;
 
         &__container {
             @extend .container;
