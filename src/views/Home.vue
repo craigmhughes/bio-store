@@ -1,6 +1,6 @@
 <template>
-  <main class="home">
-    <article class="home-landing">
+  <Page pageName="home">
+    <article class="home-landing" slot="content">
         <section class="home-landing__content">
 
             <p class="home-landing__content-slogan">Working with the earth</p>
@@ -18,14 +18,14 @@
         </section>
     </article>
 
-    <article class="alert">
+    <article class="alert" slot="content">
         <section class="alert__container">
             <img src="../assets/images/icons/truck.svg" class="alert__image"/>
             <h2 class="alert__title">Free Delivery on orders over £100 Worldwide</h2>
         </section>
     </article>
 
-    <ContentSection :emph="false">
+    <ContentSection :emph="false" slot="content">
         <h2 slot="title" class="content-slide__title--two-split">We're based in the North West of England</h2>
 
         <section slot="body" class="content-slide__body--two-split">
@@ -44,7 +44,7 @@
         </section>
     </ContentSection>
 
-    <ContentSection :emph="true">
+    <ContentSection :emph="true" slot="content">
         <h2 slot="title" class="content-slide__title">We know breaking habits is hard</h2>
         <section slot="body" class="content-slide__body">
             <section class="content-slide__body-content">
@@ -57,7 +57,7 @@
         <button slot="contentButton" class="content-slide__button--emph">Contact us today!</button>
     </ContentSection>
 
-    <ContentSection :emph="false">
+    <ContentSection :emph="false" slot="content">
         <h2 slot="title" class="content-slide__title">We also offer different services such as:</h2>
         <section slot="body" class="content-slide__body">
             <section class="content-slide__body-content">
@@ -71,7 +71,7 @@
         </section>
     </ContentSection>
 
-    <ContentSection :emph="false" :bgImg="require('../assets/images/misc/Plastic.jpg')">
+    <ContentSection :emph="false" :bgImg="require('../assets/images/misc/Plastic.jpg')" slot="content">
         <h2 slot="title" class="content-slide__title">Costing the earth</h2>
         <section slot="body" class="content-slide__body">
             <section class="content-slide__body-content">
@@ -79,21 +79,23 @@
             </section>
         </section>
     </ContentSection>
-  </main>
+  </Page>
 </template>
 
 <script>
+import Page from './components/Page.vue'
 import ContentSection from './components/ContentSection.vue'
 
 export default {
   name: 'Home',
   components: {
-    ContentSection
+    ContentSection,
+    Page
   }
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
     @import '../assets/global-elements.scss';
 
     .home-landing {

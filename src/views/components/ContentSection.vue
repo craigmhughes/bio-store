@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
     @import '../../assets/global-elements.scss';
 
     .content-slide--emph, .content-slide--img {
@@ -85,6 +85,10 @@ export default {
                 }
             }
 
+            &-content {
+                font-size: 1.25rem;
+            }
+
             &--two-split {
                 text-align: left;
                 display: flex;
@@ -107,9 +111,13 @@ export default {
                     align-self: flex-end;
                 }
             }
+
+            &--l {
+                text-align: left;
+            }
         }
 
-        &__body--two-split {
+        &__body--two-split, &__body--l {
             @extend .content-slide__body;
         }
 

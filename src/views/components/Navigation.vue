@@ -14,10 +14,10 @@
             <img src="../../assets/images/logo-colour.svg" class="navigation__image"/>
             <section class="navigation__nav-container">
                 <nav class="navigation__nav">
-                    <a href="/" class="navigation__nav-link--active">Home</a>
-                    <a href="/" class="navigation__nav-link">About us</a>
-                    <a href="/" class="navigation__nav-link">Products</a>
-                    <a href="/" class="navigation__nav-link">Contact us</a>
+                    <router-link to="/" class="navigation__nav-link--active">Home</router-link>
+                    <router-link to="/about" class="navigation__nav-link">About us</router-link>
+                    <router-link to="/" class="navigation__nav-link">Products</router-link>
+                    <router-link to="/" class="navigation__nav-link">Contact us</router-link>
                 </nav>
             </section>
             <section class="navigation__menu-container">

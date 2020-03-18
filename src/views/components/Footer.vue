@@ -30,14 +30,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
     @import '../../assets/global-elements.scss';
 
     .footer {
         background: #363636;
         color: #fff;
         padding: 1rem 0;
-        
 
         &__container {
             @extend .container;

@@ -30,6 +30,11 @@ export default {
     text-align: center;
     color: #222;
     overflow-x: hidden;
+    min-height: 100vh;
+
+    & > div {
+      min-height: calc(100vh - 520px);
+    }
   }
 
   body {
