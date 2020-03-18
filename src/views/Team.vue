@@ -62,4 +62,16 @@ export default {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
+    @media screen and (max-width: 850px) {
+      .team-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .team-list {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
 </style>
