@@ -164,9 +164,6 @@ export default {
     }
 
     @media screen and (max-width: 750px) {
-        .home {
-            padding-bottom: 12rem;
-        }
 
         .home-landing {
             font-size: 0.8rem;

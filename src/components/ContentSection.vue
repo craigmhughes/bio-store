@@ -28,7 +28,7 @@ export default {
     }    
 
     .content-slide {
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding: 2em 1em;
         margin: 0;
         text-align: center;
@@ -139,6 +139,12 @@ export default {
 
         &__button--two-split, &__button--emph {
             @extend .content-slide__button;
+        }
+    }
+
+    @media screen and (max-width: 750px){
+        .content-slide {
+            font-size: 1rem;
         }
     }
 </style>

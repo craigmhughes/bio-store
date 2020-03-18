@@ -2,17 +2,20 @@
   <div id="app">
     <Navigation />
     <Home />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation.vue';
+import Footer from './components/Footer.vue';
 import Home from './components/Home.vue';
 
 export default {
   name: 'App',
   components: {
     Navigation,
+    Footer,
     Home
   }
 }
