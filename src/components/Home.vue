@@ -56,6 +56,29 @@
         </section>
         <button slot="contentButton" class="content-slide__button--emph">Contact us today!</button>
     </ContentSection>
+
+    <ContentSection :emph="false">
+        <h2 slot="title" class="content-slide__title">We also offer different services such as:</h2>
+        <section slot="body" class="content-slide__body">
+            <section class="content-slide__body-content">
+                <ul class="content-slide__body-list">
+                    <li class="content-slide__body-list-item">Environmentally Friendly Cleaning</li>
+                    <li class="content-slide__body-list-item">Consultation on how to make your business eco-friendly</li>
+                </ul>
+                <p>There's something to suit everyone but if you can't find what you're looking for don't hesitate
+                    to contact us and we'll find the perfect solution for you!</p>
+            </section>
+        </section>
+    </ContentSection>
+
+    <ContentSection :emph="false" :bgImg="require('../assets/images/misc/Plastic.jpg')">
+        <h2 slot="title" class="content-slide__title">Costing the earth</h2>
+        <section slot="body" class="content-slide__body">
+            <section class="content-slide__body-content">
+                <p>Plastic is currently choking the Earth’s oceans and suffocating the soil. Help us help you. Get in touch today. </p>
+            </section>
+        </section>
+    </ContentSection>
   </main>
 </template>
 

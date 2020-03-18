@@ -1,5 +1,5 @@
 <template>
-    <article :class="emph == true ? 'content-slide--emph' : 'content-slide'">
+    <article :class="bgImg ? 'content-slide--img' : emph == true ? 'content-slide--emph' : 'content-slide'" :style="bgImg ? `background-image: url('${bgImg}');` : ''">
         <section class="content-slide__container">
             <slot name="title"></slot>
             <slot name="body"></slot>
@@ -13,7 +13,8 @@
 export default {
   name: 'ContentSection',
   props: {
-      emph: Boolean
+      emph: Boolean,
+      bgImg: String
   }
 }
 </script>
@@ -21,7 +22,7 @@ export default {
 <style lang="scss">
     @import '../assets/global-elements.scss';
 
-    .content-slide--emph {
+    .content-slide--emph, .content-slide--img {
         @extend .content-slide;
         
     }    
@@ -34,6 +35,33 @@ export default {
 
         &--emph {
             background: $brand_color;
+        }
+
+        &--img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 0;
+            }
+
+            & > * {
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        &--emph, &--img {
             color: #fff;
         }
 
@@ -44,30 +72,45 @@ export default {
 
         &__body {
             color: inherit;
+
+            &-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 4rem;
+
+                &-item {
+                    line-height: 100%;
+                    margin: 2rem;
+                }
+            }
+
+            &--two-split {
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+
+                & .content-slide__body-content {
+                    width: 80%;
+                    text-align: left;
+                    min-width: 300px;
+                    max-width: 600px;
+                    margin-bottom: 1rem;
+                }
+
+                & > .content-slide__body-content--last {
+                    @extend .content-slide__body-content;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    align-self: flex-end;
+                }
+            }
         }
 
         &__body--two-split {
             @extend .content-slide__body;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-
-            & .content-slide__body-content {
-                width: 80%;
-                text-align: left;
-                min-width: 300px;
-                max-width: 600px;
-                margin-bottom: 1rem;
-            }
-
-            & > .content-slide__body-content--last {
-                @extend .content-slide__body-content;
-                text-align: right;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                align-self: flex-end;
-            }
         }
 
         &__title {
