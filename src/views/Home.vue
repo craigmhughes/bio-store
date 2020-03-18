@@ -10,7 +10,7 @@
                 We are committed to providing biodegradable 
                 alternatives to the plastics that are damaging our planet.
             </p>
-            <button class="home-landing__content-button"><img src="../assets/images/icons/shopping-bag.svg"/>View Products</button>
+            <router-link to="/products" class="home-landing__content-button"><img src="../assets/images/icons/shopping-bag.svg"/>View Products</router-link>
        
         </section>
         <section class="home-landing__content--last">
@@ -39,7 +39,7 @@
                     So is it biodegradable gloves you need? Maybe aprons? Or are you in catering and require an
                     alternative to those plastic straws that end up everywhere? 
                 </p>
-                <button class="content-slide__button--two-split">Check out our product page!</button>
+                <router-link to="/products" class="content-slide__button--two-split">Check out our product page!</router-link>
             </section>
         </section>
     </ContentSection>
@@ -54,7 +54,7 @@
                 </p>
             </section>
         </section>
-        <button slot="contentButton" class="content-slide__button--emph">Contact us today!</button>
+        <router-link to="contact" slot="contentButton" class="content-slide__button--emph">Contact us today!</router-link>
     </ContentSection>
 
     <ContentSection :emph="false" slot="content">
@@ -71,7 +71,7 @@
         </section>
     </ContentSection>
 
-    <ContentSection :emph="false" :bgImg="require('../assets/images/misc/Plastic.jpg')" slot="content">
+    <ContentSection :emph="false" :bgImg="require('../assets/images/misc/Plastic.webp')" slot="content">
         <h2 slot="title" class="content-slide__title">Costing the earth</h2>
         <section slot="body" class="content-slide__body">
             <section class="content-slide__body-content">

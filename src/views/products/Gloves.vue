@@ -2,7 +2,7 @@
   <Page pageName="products-gloves">
     <h1 slot="content" class="page__title">Biodegradable Gloves</h1>
     <ContentSection slot="content">
-        <img :src="require('../../assets/images/products/Gloves.png')" slot="body"/>
+        <img :src="require('../../assets/images/products/Gloves.webp')" slot="body"/>
         <ul slot="body" class="content-slide__body-list">
             <li>An economical alternative for those with latex allergies</li>
             <li>Beaded cuff and smooth surface ensures strength and dexterity</li>

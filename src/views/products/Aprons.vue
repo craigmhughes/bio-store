@@ -2,7 +2,7 @@
   <Page pageName="products-aprons">
     <h1 slot="content" class="page__title">Biodegradable Aprons</h1>
     <ContentSection slot="content" class="product--right">
-        <img :src="require('../../assets/images/products/apron.jpg')" slot="body"/>
+        <img :src="require('../../assets/images/products/apron.webp')" slot="body"/>
         <section slot="body" class="product__body">
           <p class="btn-primary">New Polycare Biodegradable single use aprons</p>
           <p>

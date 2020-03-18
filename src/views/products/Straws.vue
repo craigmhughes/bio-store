@@ -2,7 +2,7 @@
   <Page pageName="products-straws">
     <h1 slot="content" class="page__title">Biodegradable Straws</h1>
     <ContentSection slot="content">
-        <img :src="require('../../assets/images/products/Straws.png')" slot="body"/>
+        <img :src="require('../../assets/images/products/Straws.webp')" slot="body"/>
         <ul slot="body" class="content-slide__body-list">
             <li>An economical alternative for plastic straws</li>
             <li>Smooth surface ensures strength and dexterity</li>

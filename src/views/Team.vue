@@ -16,23 +16,23 @@
     <section slot="content" class="team-list">
 
         <Team__member name="Jennifer Robertson" title="Founder of Bio-Store" education="MSc in Conservation Management"
-            :profile="require('../assets/images/team/jennifer-robertson.jpeg')"/>
+            :profile="require('../assets/images/team/jennifer-robertson.webp')"/>
 
         <Team__member name="Harry Robertson" title="Production Manager" education="BA in Business"
-        :profile="require('../assets/images/team/harry-robertson.jpeg')"/>
+        :profile="require('../assets/images/team/harry-robertson.webp')"/>
 
         <Team__member name="Josh Manningham" title="Store Team Management" education="BA in Retail Management"
-        :profile="require('../assets/images/team/josh-manningham.jpeg')"/>
+        :profile="require('../assets/images/team/josh-manningham.webp')"/>
 
 
         <Team__member name="Alex Carter" title="Lead Developer" education="BSc in Ethical Product Development"
-            :profile="require('../assets/images/team/alex-carter.jpeg')"/>
+            :profile="require('../assets/images/team/alex-carter.webp')"/>
 
         <Team__member name="Jessica Brotherton" title="Head of Finance" education="BA in Banking"
-        :profile="require('../assets/images/team/jessica-brotherton.jpeg')"/>
+        :profile="require('../assets/images/team/jessica-brotherton.webp')"/>
 
         <Team__member name="Laura Lago" title="Head of Distribution"
-        :profile="require('../assets/images/team/laura-lago.jpeg')"/>
+        :profile="require('../assets/images/team/laura-lago.webp')"/>
 
     </section>
   </Page>

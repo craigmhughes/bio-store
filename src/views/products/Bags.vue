@@ -2,7 +2,7 @@
   <Page pageName="products-bags">
     <h1 slot="content" class="page__title">Biodegradable Bags</h1>
     <ContentSection slot="content">
-        <img :src="require('../../assets/images/products/Bags.png')" slot="body"/>
+        <img :src="require('../../assets/images/products/Bags.webp')" slot="body"/>
         <ul slot="body" class="content-slide__body-list">
             <li>An economical alternative for plastic bin bags</li>
             <li>Smooth surface ensures strength and dexterity</li>
